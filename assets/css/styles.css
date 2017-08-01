@@ -146,6 +146,24 @@ html {
   /* Typography */
   text-align: center;
 }
+/* Links for the Github, LinkedIn and StackFlow */
+#media-github {
+  font-size:48px;
+  color:#ff9900;
+  padding-right: 10px;
+}
+
+#media-linkedin {
+  font-size:48px;
+  color:#003366;
+  padding-right: 10px;
+}
+
+#media-stackoverflow {
+  font-size:48px;
+  color:#ff0000;
+  padding-right: 10px;
+}
 
 /* -------END-------- */
 
