@@ -7,17 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Basic Portfolio</title>
+    <title>Alex Ratliff Portfolio</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    
+    <!-- Add FontAwesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
   </head>
 
-  <body>
+  <body class="portfolio">
     <!-- Start of navbar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
@@ -33,15 +36,16 @@
             </button>
             <div class="col-xs-12 phone-nav">
               <a class="navbar-brand" href="#" id="logo">Alex DJ Ratliff</a>
+              
             </div>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
@@ -54,16 +58,32 @@
       <div class="container">
         <section class="row">
           <div class="col-md-7">
-            <section id="portfolio-area">
-              <h1 class="port-header">Portfolio</h1>
-              <hr class="port-hr"/>
-              <img class="port-imgs" src="http://www.simplydiving.com/wp-content/uploads/2016/04/liamocto-225x300.jpg" alt="./assets/imgs/beback.jpg" id="diver_octo">
-              <img class="port-imgs" src="./assets/imgs/djsurfer.gif" alt="./assets/imgs/beback.jpg" id="djsurfer">
-              <img class="port-imgs" src="./assets/imgs/bonnie.clyde.jpg" alt="./assets/imgs/beback.jpg" id="bonnieclyde">
-              <img class="port-imgs" src="http://oaklandrenegades.org/wp-content/uploads/2012/09/DSCN0006.jpg" alt="./assets/imgs/beback.jpg" id="renegades">
-              <img class="port-imgs" src="http://cdn.osxdaily.com/wp-content/uploads/2011/01/cathode-full-screen.jpg" alt="./assets/imgs/beback.jpg" id="cli_green">
-              <img class="port-imgs" src="./assets/imgs/speechclass.jpg" alt="./assets/imgs/beback.jpg" id="speechclass">
-            </section>
+            <div id="images-portfolio">
+              <section id="portfolio-area">
+                <h1 class="port-header">Portfolio</h1>
+                <hr class="port-hr"/>
+                  
+                    <img class="port-imgs" src="./assets/img/minescraper.png" alt="./assets/img/beback.jpg" id="minescraper">
+                    <p>Minescraper app, created with Javascript, Handlebars,</p>
+                    <p> Sequelize, MongoDB and a lot of creativity...</p>
+                  
+                    <img class="port-imgs" src="./assets/img/ropeteach.jpg" alt="./assets/img/beback.jpg" id="ropeteach">
+                    <p>User instruction on PC and MAC</p>
+                    
+                    <img class="port-imgs" src="./assets/img/server.gif" alt="./assets/img/beback.jpg" id="server">
+                    <p>Server running local website apps</p>
+                  
+                    <img class="port-imgs" src="./assets/img/bjorne.mac.jpg" alt="./assets/img/beback.jpg" id="cli_green">
+                    <p>Computer mouse intelligence colleague</p>
+                  
+                    <img class="port-imgs" src="./assets/img/speechclass.jpg" alt="./assets/img/beback.jpg" id="speechclass">
+                    <p>Classmates :) </p>
+                  
+                    <img class="port-imgs" src="./assets/img/renegades.jpg" alt="./assets/img/beback.jpg" id="renegades">
+                    <p>Dragonboat Club, the Oakland Renegades</p>
+                  
+              </section>
+            </div>
           </div>
           <div class="col-md-5">
 
@@ -72,10 +92,13 @@
               <div class="connect-with-me-content">
                 <h1 class="connect-with-me-header">Connect With Me</h1>
                 <hr />
-                <div id="images">
-                  <img src="assets/imgs/github.png" alt="" class="connect-with-me-photo" id="github-link">
-                  <img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo" id="linkedin-link">
-                  <img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo" id="stackover-link">
+                <div id="media-icons">
+                  <a href="https://github.com/deejxue/" class="fa fa-github-alt" id="media-github"></a>
+                  <a href="https://www.linkedin.com/in/alexander-ratliff/" class="fa fa-linkedin" id="media-linkedin"></a>
+                  <a href="https://stackoverflow.com/users/story/8387322" class="fa fa-stack-overflow" id="media-stackoverflow"></a>
+                  <a href="./assets/files/Alex.Ratliff.pdf"><img src="./assets/img/resume.gif" id="resume-link">
+                  
+                
                 </div>
               </div>
             </section>
@@ -91,7 +114,7 @@
     <footer class="footer">
       <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
-        &copy; Copyright 2017 Your Name
+        &copy; Copyright 2017 Alex Ratliff
       </p>
     </footer>
     <!-- End of footer -->
