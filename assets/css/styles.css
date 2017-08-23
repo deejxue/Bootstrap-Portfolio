@@ -5,6 +5,7 @@ body.index, body.portfolio {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   /* Visual affect */
   background-image: url("../img/seaworld.gif");
+  background-size: 100% 100%;
 }
 
 body.contact {
@@ -13,7 +14,7 @@ body.contact {
   /* Font type */
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   /* Visual affect */
-  background-image: url("../img/catrainbow.gif");
+  background-image: url("../img/snowcat.gif");
   background-size: 100% 100%;
 }
 
@@ -71,7 +72,7 @@ html {
   margin-bottom: 33px;
   font-family: Georgia, Times, "Times New Roman", serif;
 
-  /* Typography */
+    /* Typography */
   font-size: 32px;
   font-weight: bold;
   color: #4aaaa5;
@@ -82,11 +83,15 @@ html {
   width: 100%;
   padding: 30px;
 
+  /*round the corners*/
+  border-radius: 25px;
+
   /* Positioning */
   margin-top: 32px;
 
   /* Visual */
   background-color: #fff;
+  opacity: 0.9;
 }
 
 .about-me-content > p {
@@ -101,6 +106,7 @@ html {
 
 #alex-image {
   /* Positioning */
+  overflow:hidden;
   float: left;
 
   /* Box-model */
@@ -122,11 +128,15 @@ html {
   /* Box-model */
   padding: 30px 30px 43px;
 
+  /*round the corners*/
+  border-radius: 25px;
+
   /* Positioning */
   margin-top: 32px;
 
   /* Visual */
   background-color: #fff;
+  opacity: 0.9;
 }
 
 .connect-with-me-header {
@@ -226,11 +236,15 @@ html {
   /* Box-model */
   padding: 45px 10px 25px 31px;
 
+  /*round the corners*/
+  border-radius: 25px;
+
   /* Positioning */
   margin-top: 30px;
 
   /* Visual */
   background-color: #fff;
+  opacity: 0.9;
 }
 
 .contact-form-header,
@@ -247,6 +261,7 @@ html {
 
 #name_input,
 #mail_input,
+#mail_subject,
 #msg {
   width: 95%;
 
@@ -302,8 +317,12 @@ html {
 
 #portfolio-area {
   /* Box-model */
-  width: 90%;
+  width: 100%;
   padding: 10px 10px 25px 20px;
+  float: left;
+
+  /*round the corners*/
+  border-radius: 25px;
 
   /* Positioning */
   margin-top: 5%;
@@ -324,7 +343,26 @@ html {
   margin-right: 15px;
 
   /* Positioning */
+  float: left;
+  position: relative;
   margin-bottom: 15px;
+}
+
+figure {
+  float: left;
+  width: 45%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  /*border: thin silver solid;*/
+  margin: 0.5em;
+  padding: 0.5em;
+}
+/*Align the caption text*/
+figure figcaption {
+  /*display: table-caption;*/
+  caption-side: top;
 }
 
 /* --------END--------- */
@@ -335,9 +373,30 @@ html {
 
 /* ----------------- */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 630px) {
   .navbar-header {
-    background-color: #4aaaa5;
+    background-color: white;
+  }
+
+  #portfolio-area {
+  /* Box-model */
+  width: 100%;
+  padding: 10px 10px 25px 20px;
+  float: left;
+
+  /*round the corners*/
+  border-radius: 25px;
+
+  /* Positioning */
+  margin-top: 5%;
+  /*margin-bottom: 200px;*/
+
+  /* Visual */
+  background-color: #fff;
+}
+  .port-imgs {
+    float: left ;
+    width: 80% ;
   }
 
   #logo {
@@ -355,10 +414,10 @@ html {
     /* Typography */
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: #4aaaa5;
     text-align: center;
 
     /* Visual */
-    background: #4aaaa5;
+    background: white;
   }
 }
